@@ -1,0 +1,25 @@
+.intro {
+  margin-top: 101px;
+  padding: 0 10px;
+  // display: flex;
+
+  &__consultation, &__img {
+    width: 100%;
+  }
+
+  &__consultation {
+    text-align: center;
+
+    &__text {
+      padding: 0 20px;
+      margin: 20px 0 40px;
+      line-height: 28px;
+    }
+  }
+
+  &__img {
+    background-image: url('../../assets/images/illustration-hero--desktop.svg');
+    background-repeat: no-repeat;
+    height: 525px;
+  }
+}
