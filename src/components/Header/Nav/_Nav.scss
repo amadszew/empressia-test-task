@@ -1,9 +1,16 @@
 .nav {
-  position: absolute;
-  top: 100px;
-  left: 0;
   width: 100%;
+  display: none;
   animation: 1s appear forwards;
+  margin-top: 40px;
+
+  &--visible {
+    display: block;
+  }
+
+  &__btn--mobile {
+    margin: 20px auto 0;
+  }
 
   &__list {
     display: flex;
@@ -33,24 +40,6 @@
       }
     }
   }
-
-  &__btn {
-    border: none;
-    outline: none;
-    background: $color-button-main;
-    color: $color-button-alt;
-    font-size: 14px;
-    padding: 16px;
-    border-radius: 3px;
-    width: 232px;
-    display: block;
-    margin: 20px auto 0;
-    transition: background .2s ease-in-out;
-
-    &:hover, &:focus {
-      background: darken($color-button-main, 10%);
-    }
-  }
 }
 
 @keyframes appear {
@@ -62,13 +51,17 @@
   }
 }
 
-@media (min-width: 977px) {
+@media (min-width: $mobile-breakpoint) {
   .nav {
-    position: relative;
-    top: 0;
     display: flex;
+    justify-content: space-between;
     align-items: baseline;
     animation: none;
+    margin-top: 0;
+
+    &__btn--mobile {
+      margin: 0;
+    }
 
     &__list {
       flex-direction: row;
@@ -104,6 +97,5 @@
         }
       }
     }
-
   }
 }

@@ -1,0 +1,27 @@
+.btn {
+  border: none;
+  outline: none;
+  font-family: $font-main;
+  font-weight: $main-weight-bold;
+  display: block;
+  border-radius: 3px;
+  width: 211px;
+  transition: all .2s ease-in-out;
+  
+  &__primary {
+    background: $color-button-main;
+    color: $color-button-alt;
+    font-size: 16px;
+    padding: 23px 24px;
+    
+    &--small {
+      font-size: 14px;
+      padding: 16px;
+      width: 232px;
+    }
+    
+    &:hover, &:focus {
+      background: darken($color-button-main, 10%);
+    }
+  }
+}

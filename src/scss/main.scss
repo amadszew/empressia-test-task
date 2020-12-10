@@ -1,10 +1,14 @@
 //settings
 @import './settings/font';
 @import './settings/colors';
+@import './settings/variables';
 
 //base
 @import './base/reset';
 @import './base/app';
+
+//utils
+@import './utils/buttons';
 
 //components
 @import '../components/Header/Header';

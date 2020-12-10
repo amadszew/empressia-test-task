@@ -1,8 +1,11 @@
 .header {
   padding: 40px 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   &__logo {
     width: 256px;
@@ -18,7 +21,6 @@
     }
   }
 }
-
 
 .hamburger {
   margin: 0;
@@ -88,5 +90,18 @@
 .hamburger, .hamburger__container {
   &:focus {
       outline: none;
+  }
+}
+
+@media (min-width: 991px) {
+  .hamburger {
+    display: none;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
   }
 }
