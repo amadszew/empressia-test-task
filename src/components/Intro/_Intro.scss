@@ -1,7 +1,6 @@
 .intro {
   margin-top: 101px;
-  padding: 0 10px;
-  // display: flex;
+  padding: 0 10px;  
 
   &__consultation, &__img {
     width: 100%;
@@ -12,7 +11,7 @@
 
     &__text {
       padding: 0 20px;
-      margin: 20px 0 40px;
+      margin: 20px 0 66px;
       line-height: rem(28px);
     }
 
@@ -32,8 +31,57 @@
     justify-content: center;
     margin-bottom: 100px;
 
-    img {
+    &--mobile {
       width: 100%;
+    }
+    &--desktop {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-medium) {
+  .intro {
+    padding: 0;
+    display: flex;
+
+    &__consultation, &__img {
+      width: 50%;
+    }
+
+    &__consultation {
+      text-align: left;
+
+      &__text {
+        padding: 0;
+        padding-right: 20%;
+      }
+
+      &__buttons {
+        justify-content: flex-start;
+      }
+    }
+
+    &__img {
+      margin: 0;
+      background: 
+        url('../../assets/images/illustration-hero--desktop.svg')
+        no-repeat
+        center;
+      background-size: 100% auto;
+      height: 413px;
+      width: 584px;
+      position: relative;
+
+      &--mobile {
+        display: none;
+      }
+      &--desktop {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 47px;
+      }
     }
   }
 }

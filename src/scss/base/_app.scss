@@ -16,7 +16,13 @@ html {
 body {
   background: $color-layout-main;
   font-family: $font-main;
-  font-weight: $main-weight-regular
+  font-weight: $main-weight-regular;
+}
+
+@media (min-width: $breakpoint-small) {
+  body {
+    padding: 0 10px;
+  }
 }
 
 .container {

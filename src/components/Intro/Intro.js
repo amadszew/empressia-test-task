@@ -1,6 +1,7 @@
 import React from 'react';
 
 import skypescreen from '../../assets/images/illustration-hero.png';
+import videocall from '../../assets/images/illustration-hero--phone.png';
 
 const Intro = () => {
   return (
@@ -23,7 +24,8 @@ const Intro = () => {
         </div>
       </div>
       <div className="intro__img">
-        <img src={skypescreen} alt="skype screen with video call" />
+        <img className="intro__img--mobile" src={skypescreen} alt="skype screen with video call" />
+        <img className="intro__img--desktop" src={videocall} alt="skype video call" />
       </div>
     </section>
   );
