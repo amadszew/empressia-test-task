@@ -17,9 +17,10 @@ body {
   background: $color-layout-main;
   font-family: $font-main;
   font-weight: $main-weight-regular;
+  padding: 0;
 }
 
-@media (min-width: $breakpoint-small) {
+@media (max-width: $breakpoint-small) {
   body {
     padding: 0 10px;
   }

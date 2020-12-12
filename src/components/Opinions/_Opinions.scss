@@ -1,0 +1,131 @@
+.opinions {
+  margin-top: 256px;
+  background: $color-layout-secondary;
+  padding: 130px 0 90px;
+  overflow-x: hidden;
+
+  &__header {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+
+  &__wrapper {
+    position: relative;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__list {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    &__item {
+      margin-right: 32px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__dots {
+    position: absolute;
+    bottom: 0;
+  }
+
+  &__dot {
+    border: 0;
+    outline: 0;
+    width: 22px;
+    height: 22px;
+    background: $color-text-main;
+    border-radius: 50%;
+    opacity: .2;
+    margin-right: 8px;
+    transition: all .2s linear;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    &:hover, &:focus {
+      opacity: 1;
+    }
+
+    &.active {
+      width: 42px;
+      border-radius: 10px;
+      background-color: #4432FF;
+      opacity: 1;
+    }
+  }
+}
+
+.opinion {
+  width: 360px;
+  max-height: 396px;
+  height: 100%;
+  padding: 58px 48px 46px;
+  background: $color-layout-main;
+  border: 1px solid $color-layout-accent;
+  border-radius: 5px;
+  box-sizing: border-box;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 23px;
+  }
+
+  &__date {
+    font-size: rem(14px);
+    color: $color-text-main;
+    opacity: .32;
+    text-align: right;
+  }
+
+  &__comment {
+    color: $color-text-alt;
+    font-size: rem(16px);
+    line-height: rem(28px);
+    margin-bottom: 67px;
+    height: 140px;
+    padding-right: 5%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__avatar {
+    img {
+      margin-right: 16px;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-large) {
+  .opinion {
+    width: 432px;
+  }
+}
+
+@media (min-width: $breakpoint-medium) {
+  .opinions {
+    &__dot {
+      width: 12px;
+      height: 12px;
+
+      &.active {
+        width: 22px;
+        border-radius: 5px;
+      }
+    }
+  }
+}

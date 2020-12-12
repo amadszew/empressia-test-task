@@ -52,7 +52,7 @@
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: $breakpoint-large) {
   .profit__bg {
     display: none;
   }

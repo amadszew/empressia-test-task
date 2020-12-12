@@ -6,7 +6,7 @@ import bg from '../../assets/images/illustration-segment-1.svg';
 
 const Profit = () =>  (
   <section className="profit">
-    <img className="profit__bg" src={bg} />
+    <img className="profit__bg" src={bg} alt="man with tablet" />
     <div className="profit__content">
       <div className="profit__icons">
         <img 

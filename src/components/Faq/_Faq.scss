@@ -21,7 +21,7 @@
       background: $color-button-main;
       padding: 32px 0;
       max-width: 580px;
-      width: 60%;
+      width: 100%;
       margin: 0 auto 20px;
       cursor: pointer;
       box-sizing: border-box;
@@ -89,6 +89,19 @@
   }
 }
 
+@media (max-width: $breakpoint-large) {
+  .faq {
+    &__questions {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+    &__box {
+      width: 80%;
+    }
+  }
+}
+
 @media (min-width: $breakpoint-medium) {
   .faq {
     display: flex;
@@ -118,7 +131,6 @@
     }
 
     &__box {
-      width: 100%;
       margin: 0 0 20px;
     }
   }
