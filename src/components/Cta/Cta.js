@@ -12,8 +12,6 @@ const Cta = () => (
       <button className="btn btn__ghost btn__ghost--invert cta__header__btn">
         Zarezerwuj termin już teraz
       </button>
-
-      {/* <button onClick={handleForward}>click</button> */}
     </header>
 
     <div className="cta__checks">

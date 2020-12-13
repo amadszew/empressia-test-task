@@ -2,7 +2,7 @@ import React from 'react';
 
 import NavItem from './NavItem/NavItem';
 
-const Nav = ({isOpen}) =>  (
+const Nav = ({ isOpen }) => (
   <nav className={`nav ${isOpen ? 'nav--visible' : null}`}>
     <ul className="nav__list">
       <NavItem name={"O mnie"} link={"#"} />

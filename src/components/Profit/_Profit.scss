@@ -10,8 +10,11 @@
     justify-content: center;
 
     &__icon {
-      width: 160px;
-      height: 160px;
+      width: 120px;
+      height: 120px;
+      &:first-child {
+        margin-left: 35px;
+      }
     }
   }
 
@@ -39,6 +42,13 @@
       top: -30px;
       right: -80px;
       z-index: -1;
+    }
+
+    &__icons {
+      &__icon {
+        width: 160px;
+        height: 160px;
+      }
     }
 
     &__header {

@@ -1,5 +1,5 @@
 .seo-icons {
-  padding: 138px 0 136px;
+  padding: 68px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,6 +33,7 @@
 
 @media (min-width: $breakpoint-medium) {
   .seo-icons {
+    padding: 138px 0 136px;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;

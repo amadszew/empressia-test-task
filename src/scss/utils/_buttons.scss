@@ -58,7 +58,7 @@
 
           span {
             display: block;
-            right: 20px;
+            margin-left: 3px;
             width: 27px;
             height: 27px;
             border-radius: 50%;
@@ -99,6 +99,21 @@
       &:hover, &:focus {
         background: darken($color-button-alt, 10%);
         color: $color-button-main;;
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-small) {
+  .btn__primary--icon {
+    .icon__box {
+      span {
+        width: 20px;
+        height: 20px;
+        &:before {
+          width: 9px;
+          height: 9px;
+        }
       }
     }
   }

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 
 import starFilled from '../../assets/icons/ui/star-filled.svg';
 import starEmpty from '../../assets/icons/ui/star-empty.svg';
-
 import avatarDumb from '../../assets/icons/ui/icon.svg';
 import avatarSpecial from '../../assets/icons/ui/avatar.jpg';
 
