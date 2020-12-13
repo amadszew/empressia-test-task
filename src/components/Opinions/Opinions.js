@@ -4,7 +4,7 @@ import Opinion from './Opinion';
 
 const Opinions = () => {
 
-  const [opinions, setOpinions] = useState([
+  const [opinions] = useState([
     {
       id: 1,
       date: '10 lipca 2020',
@@ -63,11 +63,11 @@ const Opinions = () => {
     const dots = document.querySelectorAll('.opinions__dot');
 
     items[i].scrollIntoView({
-      behavior: "smooth", 
-      inline: "start"
+      behavior: "smooth",
+      block: 'nearest', 
+      inline: "end"
     });
 
-    console.log('items', items[i])
     dots.forEach(dot => dot.classList.remove('active'));
     dots[i].classList.add('active');
   }
