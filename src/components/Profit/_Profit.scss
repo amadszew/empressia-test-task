@@ -17,6 +17,7 @@
 
   &__header {
     text-align: center;
+    padding: 0 10px;
 
     p {
       line-height: rem(28px);
@@ -38,8 +39,6 @@
       top: -30px;
       right: -80px;
       z-index: -1;
-      // width: 1428px;
-      // height: 831px;
     }
 
     &__header {

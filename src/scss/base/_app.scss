@@ -22,12 +22,6 @@ body {
   overflow-x: hidden;
 }
 
-@media (max-width: $breakpoint-small) {
-  body {
-    padding: 0 10px;
-  }
-}
-
 .container {
   max-width: 1169px;
   width: 100%;

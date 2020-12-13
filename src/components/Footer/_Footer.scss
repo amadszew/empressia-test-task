@@ -47,6 +47,12 @@
         width: 138px;
         height: 22px;
         margin-top: 8px;
+        opacity: .9;
+        transition: opacity .2s ease;
+
+        &:hover, &:focus {
+          opacity: 1;
+        }
       }
     }
 
@@ -54,9 +60,15 @@
       img {
         width: 32px;
         height: 32px;
+        opacity: .9;
+        transition: opacity .2s ease;
 
         &:first-child {
           margin-right: 12px;
+        }
+
+        &:hover, &:focus {
+          opacity: 1;
         }
       }
     }
@@ -71,6 +83,7 @@
   &__menu {
     text-align: center;
     margin-bottom: 60px;
+    padding: 0 10px;
 
     &__text {
       line-height: rem(28px);
@@ -97,6 +110,13 @@
         &:last-child {
           margin-bottom: 0;
         }
+
+        a {
+          transition: color .2s ease;
+          &:hover, &:focus {
+            color: lighten($color-text-main, 20%);
+          }
+        }
       }
     }
   }
@@ -114,6 +134,12 @@
         margin-right: 15px;
         &:last-child {
           margin-right: 0;
+        }
+        a {
+          transition: color .2s ease;
+          &:hover, &:focus {
+            color: lighten($color-text-main, 20%);
+          }
         }
       }
     }
@@ -141,6 +167,11 @@
 
       a {
         color: $color-button-main;
+        transition: .2s ease-in-out;
+
+        &:hover, &:focus {
+          color: darken($color-button-main, 10%);
+        }
       }
     }
 
@@ -161,6 +192,7 @@
   .footer {
     &__menu {
       width: 70%;
+      padding: 0;
     }
   }
 }

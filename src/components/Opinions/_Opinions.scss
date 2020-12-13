@@ -1,5 +1,5 @@
 .opinions {
-  margin-top: 256px;
+  margin-top: 0;
   background: $color-layout-secondary;
   padding: 130px 0 90px;
   overflow-x: hidden;
@@ -118,6 +118,7 @@
 
 @media (min-width: $breakpoint-medium) {
   .opinions {
+    margin-top: 256px;
     &__dot {
       width: 12px;
       height: 12px;
