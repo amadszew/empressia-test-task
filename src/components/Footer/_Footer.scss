@@ -166,11 +166,11 @@
       }
 
       a {
-        color: $color-button-main;
+        color: $color-text-alt;
         transition: .2s ease-in-out;
 
         &:hover, &:focus {
-          color: darken($color-button-main, 10%);
+          color: darken($color-text-alt, 20%);
         }
       }
     }
