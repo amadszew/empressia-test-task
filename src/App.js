@@ -7,6 +7,7 @@ import Faq from './components/Faq/Faq';
 import Opinions from './components/Opinions/Opinions';
 import SeoIcons from './components/SeoIcons/SeoIcons';
 import Cta from './components/Cta/Cta';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Cta />
         </div>
       </main>
+      <Footer />
     </div>
   );
 }

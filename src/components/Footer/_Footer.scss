@@ -1,0 +1,260 @@
+.footer {
+  background: $color-layout-secondary;
+  padding: 40px 0 0;
+  
+  &__icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 220px;
+    padding: 0 20px 32px;
+    border-bottom: 1px solid rgba(14, 14, 14, .08);
+    margin-bottom: 65px;
+
+    &__empressia {
+      img {
+        width: 56px;
+        height: 56px;
+      }
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      height: 50%;
+    }
+
+    &__zl {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+
+      &__stars {
+        width: 108px;
+        height: 20px;
+      }
+
+      &__text {
+        font-size: rem(14px);
+        margin: 0 4px 0 12px;
+      }
+
+      &__logo {
+        width: 138px;
+        height: 22px;
+        margin-top: 8px;
+      }
+    }
+
+    &__socials {
+      img {
+        width: 32px;
+        height: 32px;
+
+        &:first-child {
+          margin-right: 12px;
+        }
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__menu {
+    text-align: center;
+    margin-bottom: 60px;
+
+    &__text {
+      line-height: rem(28px);
+    }
+  }
+
+  &__column {
+    text-align: center;
+    margin-bottom: 60px;
+
+    &__title {
+      font-size: rem(18px);
+      color: $color-button-main;
+      margin-bottom: 37px;
+    }
+
+    &__list {
+      padding: 0 20px;
+
+      &__item {
+        line-height: rem(24px);
+        margin-bottom: 25px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+    &__list {
+      display: flex;
+      align-items: center;
+      
+      &__item {
+        margin-right: 15px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  &__end {
+    background: $color-layout-main;
+    padding: 40px 0 64px;
+    font-size: rem(14px);
+    
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__copy {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+
+      p {
+        margin-right: 12px;
+      }
+
+      a {
+        color: $color-button-main;
+      }
+    }
+
+    &__logo {
+      span {
+        margin-right: 8px;
+      }
+
+      img {
+        width: 122px;
+        height: 12px;
+      }
+    }
+  }
+}
+
+@media (min-width: $breakpoint-small) {
+  .footer {
+    &__menu {
+      width: 70%;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-medium) {
+  .footer {
+    &__icons {
+      flex-direction: row;
+      height: auto;
+  
+      &__empressia {
+        width: 50%;
+      }
+  
+      &__wrapper {
+        flex-direction: row;
+        width: 50%;
+        height: 100%;
+      }
+
+      &__zl {
+        &__logo {
+          margin-top: 0;
+        }
+      }
+    }
+  
+    &__menu {
+      margin-bottom: 100px;
+  
+      &__text {
+        line-height: rem(28px);
+      }
+    }
+
+    &__columns {
+      display: flex;
+    }
+
+    &__end {
+      padding: 40px 20px 64px;
+
+      &__wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+  
+      &__copy {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: $breakpoint-large) {
+  .footer {
+    &__icons {
+      padding: 0 0 32px;
+    }
+
+    &__content {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+
+    &__menu {
+      margin: 0 160px 0 0;
+      width: 60%;
+      text-align: left;
+  
+      &__text {
+        line-height: rem(28px);
+      }
+    }
+
+    &__nav {
+      justify-content: flex-start;
+    }
+
+    &__column {
+      text-align: left;
+      width: 260px;
+
+      &:first-child {
+        margin-right: 64px;
+      }
+    
+      &__list {
+        padding-left: 0;
+      }
+    }
+
+    &__end {
+      padding: 40px 0 64px;
+    }
+  }
+}

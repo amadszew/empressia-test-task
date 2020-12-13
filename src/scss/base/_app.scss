@@ -18,6 +18,8 @@ body {
   font-family: $font-main;
   font-weight: $main-weight-regular;
   padding: 0;
+  color: $color-text-main;
+  overflow-x: hidden;
 }
 
 @media (max-width: $breakpoint-small) {
