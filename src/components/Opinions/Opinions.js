@@ -67,6 +67,7 @@ const Opinions = () => {
       inline: "start"
     });
 
+    console.log('items', items[i])
     dots.forEach(dot => dot.classList.remove('active'));
     dots[i].classList.add('active');
   }

@@ -5,6 +5,7 @@ import Intro from './components/Intro/Intro';
 import Profit from './components/Profit/Profit';
 import Faq from './components/Faq/Faq';
 import Opinions from './components/Opinions/Opinions';
+import SeoIcons from './components/SeoIcons/SeoIcons';
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
           <Faq />
         </div>
         <Opinions />
+        <div className="container">
+          <SeoIcons />
+        </div>
       </main>
     </div>
   );
