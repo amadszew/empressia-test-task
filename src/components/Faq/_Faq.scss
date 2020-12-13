@@ -1,0 +1,144 @@
+.faq {
+  margin-top: 100px;
+
+  &__info {
+    margin-bottom: 60px;
+
+    &__header {
+      text-align: center;
+    }
+  
+    &__btn {
+      margin: 32px auto 0;
+    }
+
+    &__img {
+      display: none;
+    }
+  }
+
+  &__box {
+      background: $color-button-main;
+      padding: 32px 0;
+      max-width: 580px;
+      width: 100%;
+      margin: 0 auto 20px;
+      cursor: pointer;
+      box-sizing: border-box;
+      transition: .3s ease-in;
+
+      &--reverse {
+        background: $color-button-alt;
+
+        .faq__question {
+
+          &__header {
+            color: $color-button-main;
+          }
+
+          &__chevron {
+            &::before {
+              border-color: $color-button-main;
+              transform: rotate(-45deg);
+            }
+          }
+        }
+      }
+    }
+
+    &__question {
+      position: relative;
+      padding: 0 52px 0 32px;
+
+      &__header {
+        color: $color-button-alt;
+        width: 70%;
+        line-height: rem(28px);
+        transition: .3s ease-in;
+      }
+
+      &__chevron {
+        position: absolute;
+        top: calc(50% - 10px);
+        right: 24px;
+        width: 20px;
+        height: 20px;
+        
+        &::before {
+          content: '';
+          border-width: 2px 2px 0 0;
+          border-style: solid;
+          border-color: $color-button-alt;
+          display: inline-block;
+          position: relative;
+          left: 6px;
+          width: 7px;
+          height: 7px;
+          transform: rotate(135deg);
+          transition: .2s linear;
+        } 
+      }
+
+    &__answer {
+      color: $color-text-alt;
+      padding: 0 52px 0 32px;
+      margin-top: 16px;
+      line-height: rem(28px);
+      width: 85%;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-large) {
+  .faq {
+    &__questions {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+    &__box {
+      width: 80%;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-medium) {
+  .faq {
+    display: flex;
+    margin-top: 200px;
+
+    &__info, &__questions {
+      width: 50%;
+    }
+
+    &__info {
+      margin-bottom: 0;
+      position: relative;
+
+      &__header {
+        text-align: left;
+      }
+
+      &__btn {
+        margin: 32px 0 0;
+      }
+
+      &__img {
+        display: block;
+        position: absolute;
+        top: 220px;
+        left: -25%;
+      }
+    }
+
+    &__box {
+      margin: 0 0 20px;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-medium) and (max-width: $breakpoint-large) {
+  .faq {
+    padding: 0 10px;
+  }
+}

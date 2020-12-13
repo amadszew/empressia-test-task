@@ -1,0 +1,120 @@
+.btn {
+  border: none;
+  outline: none;
+  font-family: $font-main;
+  font-weight: $main-weight-bold;
+  font-size: rem(16px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  width: 211px;
+  height: 56px;
+  box-sizing: border-box;
+  transition: all .2s ease-in-out;
+  
+  &__primary {
+    background: $color-button-main;
+    color: $color-button-alt;
+    
+    &--small {
+      font-size: rem(14px);
+      width: 232px;
+      height: 40px;
+    }
+    
+    &:hover, &:focus {
+      background: darken($color-button-main, 10%);
+    }
+
+    &--icon {
+      width: 268px;
+
+      &:hover, &:focus {
+        .icon {
+          &__box {
+            background: darken($color-button-main, 10%);
+
+            span:before {
+              opacity: 1;
+            }
+          }
+        }
+      }
+
+      .icon {
+        &__text {
+          width: 80%;
+          text-align: center;
+        }
+        &__box {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 20%;
+          height: 100%;
+          border-left: 1px solid rgba(255, 255, 225, .16);
+          transition: all .2s ease-in-out;
+
+          span {
+            display: block;
+            margin-left: 3px;
+            width: 27px;
+            height: 27px;
+            border-radius: 50%;
+            background: transparent;
+            border: 3px solid $color-button-alt;
+            box-sizing: border-box;
+
+            &:before {
+              content: '';
+              display: block;
+              opacity: 0;
+              width: 16px;
+              height: 16px;
+              border-radius: 50%;
+              background: $color-button-alt;
+              transform: translate(2.5px, 2.5px);
+              transition: opacity .2s ease-in-out;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__ghost {
+    background: $color-button-alt;
+    color: $color-button-main;
+    border: 2px solid $color-button-main;
+
+    &:hover, &:focus {
+      background: darken($color-button-main, 10%);
+      color: $color-button-alt;;
+    }
+
+    &--invert {
+      border: none;
+
+      &:hover, &:focus {
+        background: darken($color-button-alt, 10%);
+        color: $color-button-main;;
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-small) {
+  .btn__primary--icon {
+    .icon__box {
+      span {
+        width: 20px;
+        height: 20px;
+        &:before {
+          width: 9px;
+          height: 9px;
+        }
+      }
+    }
+  }
+}

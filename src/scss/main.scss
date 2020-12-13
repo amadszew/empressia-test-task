@@ -1,9 +1,28 @@
 //settings
 @import './settings/font';
 @import './settings/colors';
+@import './settings/variables';
+
+//abstract
+@import './abstract/functions';
 
 //base
 @import './base/reset';
 @import './base/app';
 
+//utils
+@import './utils/buttons';
+
 //components
+@import '../components/Header/Header';
+@import '../components/Header/Nav/Nav';
+@import '../components/Intro/Intro';
+@import '../components/Profit/Profit';
+@import '../components/Faq/Faq';
+@import '../components/Opinions/Opinions';
+@import '../components/SeoIcons/SeoIcons';
+@import '../components/Cta/Cta';
+@import '../components/Footer/Footer';
+
+//utils
+@import '../utils/Cookies/Cookies';

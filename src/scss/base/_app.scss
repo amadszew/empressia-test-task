@@ -1,32 +1,77 @@
+html {
+  font-size: 16px;
+}
+
+@media (max-width: $breakpoint-small) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: $breakpoint-extra-small) {
+  html {
+    font-size: 12px;
+  }
+}
+
+body {
+  background: $color-layout-main;
+  font-family: $font-main;
+  font-weight: $main-weight-regular;
+  padding: 0;
+  color: $color-text-main;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1169px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .heading {
   color: $color-text-main;
   font-family: $font-headings;
   font-weight: $headings-weight-demi;
 
   @at-root h1#{&} {
-    font-size: 64px;
+    font-size: rem(64px);
     font-weight: $headings-weight-bold;
-    line-height: 64px;
+    line-height: rem(64px);
   }
   @at-root h2#{&} {
-    font-size: 56px;
+    font-size: rem(56px);
     font-weight: $headings-weight-bold;
-    line-height: 64px;
+    line-height: rem(64px);
   }
   @at-root h3#{&} {
-    font-size: 40px;
-    line-height: 48px;
+    font-size: rem(40px);
+    line-height: rem(48px);
   }
   @at-root h4#{&} {
-    font-size: 28px;
-    line-height: 40px;
+    font-size: rem(28px);
+    line-height: rem(40px);
   }
   @at-root h5#{&} {
-    font-size: 24px;
-    line-height: 40px;
+    font-size: rem(24px);
+    line-height: rem(40px);
   }
   @at-root h6#{&} {
-    font-size: 16px;
-    line-height: 18px;
+    font-size: rem(16px);
+    line-height: rem(18px);
   }
+
+  &--reverse {
+    color: $color-layout-main;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $color-text-main;
+}
+
+p {
+  font-family: $font-main;
+  font-weight: $main-weight-regular;
+  color: #4A4764;
 }
