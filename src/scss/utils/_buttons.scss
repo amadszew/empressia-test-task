@@ -92,5 +92,14 @@
       background: darken($color-button-main, 10%);
       color: $color-button-alt;;
     }
+
+    &--invert {
+      border: none;
+
+      &:hover, &:focus {
+        background: darken($color-button-alt, 10%);
+        color: $color-button-main;;
+      }
+    }
   }
 }

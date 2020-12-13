@@ -6,6 +6,7 @@ import Profit from './components/Profit/Profit';
 import Faq from './components/Faq/Faq';
 import Opinions from './components/Opinions/Opinions';
 import SeoIcons from './components/SeoIcons/SeoIcons';
+import Cta from './components/Cta/Cta';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Opinions />
         <div className="container">
           <SeoIcons />
+          <Cta />
         </div>
       </main>
     </div>
